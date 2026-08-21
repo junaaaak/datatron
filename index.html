@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Datatron: A World Without Data</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="hero-grid"></div>
+
+<!-- ================= HERO ================= -->
+<section id="hero">
+  <a class="section-next" href="#story">Next chapter <span aria-hidden="true">&darr;</span></a>
+  <div class="hero-content">
+    <span class="eyebrow">A story about data</span>
+    <img class="bot bot-hero-image" id="bot-hero" src="datatron.png" alt="Datatron, a friendly robot">
+    <h1>One morning, all the data disappeared.</h1>
+    <p class="lede">Meet Datatron. It woke up in a world with no maps, no playlists, no recommendations &mdash; and it needs your help to understand what data actually does.</p>
+  </div>
+  <div class="scroll-cue">SCROLL TO BEGIN <span>&darr;</span></div>
+</section>
+
+<!-- ================= STORY ================= -->
+<section id="story">
+  <a class="section-next" href="#dashboard">Next chapter <span aria-hidden="true">&darr;</span></a>
+  <span class="eyebrow">Chapter one</span>
+  <h2 style="font-size:clamp(26px,4vw,36px); margin:12px 0 10px;">What Datatron woke up to</h2>
+
+  <div class="beat">
+    <svg class="bot" viewBox="0 0 200 240" style="width:90px;" role="img" aria-label="Datatron looking confused">
+      <ellipse class="bot-outline bot-body" cx="100" cy="70" rx="42" ry="36"/>
+      <circle cx="78" cy="63" r="5" fill="#2B2A3D"/>
+      <circle cx="122" cy="67" r="5" fill="#2B2A3D"/>
+      <path class="bot-outline" d="M82 92 q18 -8 36 2" fill="none"/>
+      <path class="bot-outline bot-body" d="M55 105 q45 -18 90 0 q10 70 -45 100 q-55 -30 -45 -100 Z"/>
+      <rect class="bot-outline bot-screen" x="76" y="140" width="48" height="30" rx="4"/>
+      <text x="100" y="159" text-anchor="middle" class="bot-screen-text">???</text>
+    </svg>
+    <div>
+      <p>Datatron opened its eyes and blinked. The map on the wall showed nothing. The music app had no songs to suggest. Every screen was blank.</p>
+      <span class="cap">Without data, even simple tools stop working.</span>
+    </div>
+  </div>
+
+  <div class="beat">
+    <svg class="bot" viewBox="0 0 200 240" style="width:90px;" role="img" aria-label="Datatron thinking">
+      <ellipse class="bot-outline bot-body" cx="100" cy="70" rx="42" ry="36"/>
+      <path class="bot-outline" d="M72 63 h16 M112 63 h16" stroke-linecap="round"/>
+      <path class="bot-outline" d="M84 92 q16 6 32 0" fill="none"/>
+      <path class="bot-outline bot-body" d="M55 105 q45 -18 90 0 q10 70 -45 100 q-55 -30 -45 -100 Z"/>
+      <rect class="bot-outline bot-screen" x="76" y="140" width="48" height="30" rx="4"/>
+      <text x="100" y="159" text-anchor="middle" class="bot-screen-text">? ! ?</text>
+    </svg>
+    <div>
+      <p>No app could guess what Datatron wanted to watch, buy, or hear next. Every recommendation, every prediction, every "you might also like" was gone.</p>
+      <span class="cap">Predictions come from patterns in old data.</span>
+    </div>
+  </div>
+
+  <div class="beat">
+    <svg class="bot" viewBox="0 0 200 240" style="width:90px;" role="img" aria-label="Datatron determined">
+      <ellipse class="bot-outline bot-body" cx="100" cy="70" rx="42" ry="36"/>
+      <path class="bot-outline" d="M74 65 l10 -4 M116 61 l10 4" stroke-linecap="round"/>
+      <path class="bot-outline" d="M80 90 q20 12 40 0" fill="none"/>
+      <path class="bot-outline bot-body" d="M55 105 q45 -18 90 0 q10 70 -45 100 q-55 -30 -45 -100 Z"/>
+      <rect class="bot-outline bot-screen" x="76" y="140" width="48" height="30" rx="4"/>
+      <text x="100" y="159" text-anchor="middle" class="bot-screen-text">LOAD..</text>
+    </svg>
+    <div>
+      <p>So Datatron made a decision: it would learn exactly how data works, one piece at a time, and get the world running again. That's where you come in.</p>
+      <span class="cap">Four labs. One mission. Let's start.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DASHBOARD ================= -->
+<section id="dashboard">
+  <a class="section-next" href="#core">Next chapter <span aria-hidden="true">&darr;</span></a>
+  <span class="eyebrow">Chapter two &mdash; Datatron's lab</span>
+  <h2>Four ways data comes alive</h2>
+  <p class="intro">Data isn't just numbers in a spreadsheet. It quietly shapes what you see online every day &mdash; what you're shown, what gets suggested, what gets recognized. Try each lab below and see it happen in real time.</p>
+
+  <div class="grid4">
+
+    <div class="card">
+      <span class="tag">Language</span>
+      <h3>Guess my doodle</h3>
+      <p>Draw something simple. Watch a computer guess what it is, in real time, using drawings made by other people.</p>
+      <div class="btnrow">
+        <a class="btn primary" href="https://quickdraw.withgoogle.com/" target="_blank" rel="noopener">Try Quick, Draw! &#8599;</a>
+        <button class="btn ghost" onclick="openModal('nlp')">How does data help?</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="tag">Generative AI</span>
+      <h3>Mix two emoji</h3>
+      <p>Pick two emoji that have nothing in common. Watch the computer blend them into something brand new.</p>
+      <div class="btnrow">
+        <a class="btn primary" href="https://www.google.com/search?q=google+emoji+kitchen" target="_blank" rel="noopener">Try Emoji Kitchen &#8599;</a>
+        <button class="btn ghost" onclick="openModal('genai')">How does data help?</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="tag">Computer vision</span>
+      <h3>Show your hand</h3>
+      <p>Turn on your camera. Watch the computer figure out which hand you're holding up, and what shape it's making.</p>
+      <div class="btnrow">
+        <a class="btn primary" href="https://google-ai-edge.github.io/mediapipe-samples-web/#/vision/gesture_recognizer" target="_blank" rel="noopener">Try gesture reader &#8599;</a>
+        <button class="btn ghost" onclick="openModal('cv')">How does data help?</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="tag">Neural networks</span>
+      <h3>Rewire a brain</h3>
+      <p>This computer "brain" learns by trial and error. Change its wiring and watch how fast it learns a new pattern.</p>
+      <div class="btnrow">
+        <a class="btn primary" href="https://playground.tensorflow.org/" target="_blank" rel="noopener">Try TensorFlow Playground &#8599;</a>
+        <button class="btn ghost" onclick="openModal('nn')">How does data help?</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= CORE DIAGRAM ================= -->
+<section id="core">
+  <a class="section-next" href="#footer">Finish <span aria-hidden="true">&darr;</span></a>
+  <span class="eyebrow">Chapter three &mdash; the bigger picture</span>
+  <h2>Where data science shows up</h2>
+  <p class="intro">Datatron isn't the only one who needs data. It quietly runs in the background of almost every industry.</p>
+
+  <div class="diagram-wrap">
+    <img class="diagram-image" src="diagram.png" alt="Diagram showing where data science is used across different industries">
+  </div>
+</section>
+
+<footer id="footer">
+  <svg class="bot" style="width:70px;" viewBox="0 0 200 240" role="img" aria-label="Datatron waving">
+    <ellipse class="bot-outline bot-body" cx="100" cy="70" rx="42" ry="36"/>
+    <circle cx="80" cy="65" r="5" fill="#2B2A3D"/>
+    <circle cx="120" cy="65" r="5" fill="#2B2A3D"/>
+    <path class="bot-outline" d="M78 88 q22 14 44 0" fill="none"/>
+    <path class="bot-outline bot-body" d="M55 105 q45 -18 90 0 q10 70 -45 100 q-55 -30 -45 -100 Z"/>
+    <ellipse class="bot-outline bot-body" cx="40" cy="150" rx="14" ry="34" transform="rotate(-45 40 150)"/>
+    <ellipse class="bot-outline bot-body" cx="160" cy="150" rx="14" ry="34" transform="rotate(18 160 150)"/>
+  </svg>
+  <p>Data is back on &mdash; thanks to you. Datatron says thank you.</p>
+</footer>
+
+<!-- ================= MODAL ================= -->
+<div class="overlay" id="overlay">
+  <div class="modal">
+    <button class="close" onclick="closeModal()">&times;</button>
+    <span class="tag" id="modal-tag">Module</span>
+    <h3 id="modal-title">Title</h3>
+    <p id="modal-body">Body</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
